@@ -10,11 +10,12 @@ export default function Footer({}) {
             </div>
             <div className="flex flex-col w-1/4 items-center">
                 <p>vegan bites ltd</p>
-                <p>company no.  13675077</p>
+                <p>company no. 13675077</p>
             </div>
             <div className="flex flex-col w-1/4 items-center">
-                <Link href="https://www.facebook.com/veganbites.uk">facebook: @veganbites.uk</Link>
                 <Link href="https://www.instagram.com/veganbites.uk">instagram: @veganbites.uk</Link>
+                <Link href="https://www.facebook.com/veganbites.uk">facebook: @veganbites.uk</Link>
+
             </div>
         </div>
     )
