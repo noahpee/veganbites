@@ -26,6 +26,12 @@ export default function About({}) {
         <Link href="/" className=" z-20 sm:hidden hover:opacity-50 text-[22px]  bg-orange-400 h-14 w-14 flex items-center justify-center rounded-full shadow-lg absolute left-2 top-16">
         &lt; back
       </Link>
+
+      <div className="sm:flex flex-col hidden absolute z-30 right-3 h-full items-center justify-center">
+              <Link className="w-8 h-8 my-2 p-[5%]" href=""><img src="mail-01.png" alt="mail" /> </Link>
+              <Link className="w-8 h-8 my-2 p-[5%]" href="https://www.instagram.com/veganbites.uk"><img src="in.png" alt="instagram logo" /> </Link>
+              <Link className="w-8 h-8 my-2 p-[5%]" href="https://www.facebook.com/veganbites.uk"><img src="fb.png" alt="facebook logo" /> </Link>
+            </div>
       
             <div className="flex overflow-y-scroll sm:overflow-hidden flex-col sm:flex-row w-[95%]  max-h-[85%] mt-1 sm:mt-4">
                 <div className="w-full mx-2 px-8 bg-orange-200 rounded-xl shadow">
