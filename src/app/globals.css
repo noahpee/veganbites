@@ -21,3 +21,12 @@
     scrollbar-width: none; 
 }
 }
+
+.fade-in {
+  opacity: 0; /* Initially transparent */
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.fade-in.loaded {
+  opacity: 1; /* Faded in */
+}

@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer({}) {
 
     return (
-        <div className="flex w-full h-[10%] mt-4 text-[14px] sm:text-[20px] justify-evenly">
+        <div className="flex w-full h-[10%] mt-4 text-[12px] sm:text-[20px] justify-evenly">
             <div className="flex flex-col w-1/4 items-center">
                 <p>mobile: 07432456400</p>
                 <p>email: shreena@veganbites.uk</p>

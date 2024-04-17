@@ -7,6 +7,8 @@ import React, { useState, useRef } from "react";
 
 import emailjs from "@emailjs/browser"
 
+import Link from 'next/link'
+
 export default function Home() {
 
   console.log("home render");
@@ -110,7 +112,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full h-screen bg-orange-100 overflow-y-auto z-10 flex flex-col  items-center">
+    <main className="w-full h-screen overflow-y-auto z-10 flex flex-col  items-center">
             <img src="/mom.png" alt="mom" className="absolute py-[15%] mt-6 sm:py-[7%] rounded-full  sm:flex sm:left-0 h-full opacity-20"/>
 
       <div className="flex justify-center items-center w-full max-h-[12.5%] min-h-[12.5%]">
@@ -137,7 +139,7 @@ export default function Home() {
           </div>
       </div>
 
-      <div className=" sm:min-h-[65%] z-10 relative w-[90%] rouned shadow sm:w-[70%] bg-orange-300 flex flex-col mt-10 items-center">
+      <div className=" sm:min-h-[65%] z-10 relative w-[90%] rouned shadow sm:w-[70%] bg-orange-100 flex flex-col mt-10 items-center">
 
           <img className="absolute bottom-5 rotate-[6deg] h-28 right-8" src="/carbon.webp" alt="carbon" />
 
@@ -152,23 +154,23 @@ export default function Home() {
             <img className="h-[90%]" src="/box.jpg" alt="rice box" />
             </div>
             <div className="w-1/2 h-full flex p-3 flex-col items-center justify-center">
-              <p className="sm:w-1/2"> &nbsp; Our menu brings together our favourite flavours from around the world - familiar tastes as well as new ones. We cook our hot dogs American style for that familiar smokey flavour of traditional hot dogs. Proud to say our food is loved by everyone, vegans and non-vegans alike! Dont just take our word for it read what our customers have to say. For flavours close to home try our Classic or Smokey hotdogs or for a flavour further afield we have Korean, Hot Hot or Bombae. For the full menu just get in contact! See our menu allergens</p>
+              <p className="sm:w-1/2 overflow-y-scroll"> &nbsp; Our menu brings together our favourite flavours from around the world - familiar tastes as well as new ones. We cook our hot dogs American style for that familiar smokey flavour of traditional hot dogs. Proud to say our food is loved by everyone, vegans and non-vegans alike! Dont just take our word for it read what our customers have to say. For flavours close to home try our Classic or Smokey hotdogs or for a flavour further afield we have Korean, Hot Hot or Bombae. For the full menu just get in contact! See our menu allergens</p>
             </div>
           </div>
         </div>
 
-        <div className="min-h-[500px] z-10 sm:w-[70%] w-[90%] bg-orange-300 rounded shadow flex flex-col mt-10 items-center">
+        <div className="min-h-[600px] z-10 sm:w-[70%] w-[90%] bg-orange-100 rounded shadow flex flex-col mt-10 items-center">
           <p className="h-[10%] text-[50px] mb-1" ref={contactRef}>Contact</p>
-          <p className="h-[8%] text-center px-4 mt-4">For event enquires please let us know the details using the form below.</p>
-          <p className="h-[8%] text-center px-4 mb-2"> If youd like to contact us more directly you can via any of the methods at the bottom of the page.</p>
+          <p className="text-center px-4 mt-4">For event enquires please let us know the details using the form below.</p>
+          
           <form className="w-[90%] h-[70%] flex flex-wrap justify-evenly items-center" onSubmit={handleSubmit}>
-            <label className="w-2/3 flex items-center justify-center">name:
+            <label className="w-full flex items-center justify-center">name:
               <input type="text" className="w-2/3 ml-3" />
             </label>
-            <label className="w-2/3 flex items-center justify-center">email:
+            <label className="w-full flex items-center justify-center">email:
               <input type="text" className="w-2/3 ml-3" />
             </label>
-            <label className="w-2/3 flex items-center justify-center">subject:
+            <label className="w-full flex items-center justify-center">subject:
               <input type="text" className="w-2/3 ml-3" />
             </label>
             <label className="w-full flex justify-center">message:
@@ -177,6 +179,8 @@ export default function Home() {
             <button type="submit" className="hover:text-orange-700"> Send</button>
 
           </form>
+          <p className=" text-center px-4 mb-4"> If youd like to contact us more directly you can via any of the methods at the bottom of the page.</p>
+
         </div>
 
         <div className="h-[350px] z-10 w-[90%] sm:w-[85%] bg-orange-200 px-2 flex rounded shadow flex-col mt-10 items-center">
@@ -213,8 +217,8 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="max-h-[350px] z-10 min-h-[350px] w-[90%] sm:w-[70%] rounded shadow bg-orange-300 flex flex-col mt-10 items-center">
-          <p ref={reviewRef} className="h-[15%] text-center text-[50px] w-full mb-1">Reviews & Testimonials</p>
+      <div className="max-h-[350px] z-10 min-h-[350px] w-[90%] sm:w-[70%] rounded shadow bg-orange-100 flex flex-col mt-10 items-center">
+          <p ref={reviewRef} className="h-[15%] text-center text-[50px] w-full mb-1">Reviews</p>
 
           <div className="min-h-[80%] px-16 relative w-full flex flex-col items-center text-justify">
 
@@ -229,6 +233,7 @@ export default function Home() {
 
       <iframe className="rounded-lg z-10 w-[90%] sm:w-[80%] sm:min-h-[50%] min-h-[40%] shadow-lg mt-10 mb-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.0972439901343!2d0.1191343!3d52.2052803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8718ca20d3c21%3A0xb9a5c7a21a51e70!2sVegan%20Bites!5e0!3m2!1sen!2suk!4v1687821276327!5m2!1sen!2suk"  style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
+      <Link href="https://ratings.food.gov.uk/business/1473993/vegan-bites/online-ratings" ><img src="/level5.webp" alt="food hygiene level 5" className="mt-6" /></Link>
     <Footer />
     </div>
     </main>

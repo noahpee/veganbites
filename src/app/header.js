@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Header({ whatClick, menuClick, galleryClick, contactClick, reviewClick, menu, setMenu }) {
 
     return (
-        <div className={`flex flex-col bg-orange-200 z-20 w-full h-full sm:flex-row`}>
+        <div className={`flex flex-col z-20 w-full h-full sm:flex-row`}>
             <div className="flex w-full sm:w-1/3 items-end justify-center my-auto h-full">
             {menu !== "about" && menu && <div onClick={() => setMenu(!menu)} className=" z-20 text-orange-700 cursor-pointer sm:hidden  text-[55px] text-gray-800  flex items-center justify-center  absolute left-3 top-3">
       ☰
@@ -21,7 +21,7 @@ export default function Header({ whatClick, menuClick, galleryClick, contactClic
 
             </div>
 
-            <div className={` ${menu && menu !== "about" && "absolute fixed top-0 w-full z-10 h-full bg-orange-300 flex flex-col items-center justify-evenly text-[40px]" || "w-2/3 hidden text-[26px] sm:flex min-h-1/2 justify-evenly items-center"}`}>
+            <div className={` ${menu && menu !== "about" && "absolute fixed inset-0 top-0 w-full z-10 h-full bg-orange-300 flex flex-col items-center justify-evenly text-[40px]" || "w-2/3 hidden text-[26px] sm:flex min-h-1/2 justify-evenly items-center"}`}>
                 {menu !== "about" && <div className={`flex ${menu && "flex-col"} w-full justify-evenly  h-full items-center`}>
                 <p className="cursor-pointer hover:text-orange-700" onClick={whatClick}>what we do</p>
                 <p className="cursor-pointer hover:text-orange-700" onClick={menuClick}>our menu</p>
