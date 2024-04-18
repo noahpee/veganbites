@@ -23,6 +23,8 @@ export default function Home() {
 
   const [menu, setMenu] = useState(false)
 
+  const [sent, setSent] = useState(false)
+
   const testys = [
     {
       name: "Adam - Food & Drinks Officer",
@@ -52,6 +54,8 @@ export default function Home() {
   ]
 
   const handleSubmit = (e) => {
+
+    setSent(true)
 
     e.preventDefault();
 
@@ -156,7 +160,7 @@ export default function Home() {
       <div className="max-h-full w-[90%] z-10 sm:w-[85%] bg-orange-200 rounded shadow flex flex-col mt-10 items-center">
           <p className=" text-[50px]" ref={menuRef}>Our Menu</p>
           <div className="w-full flex flex-col sm:flex-row">
-            <div className="sm:w-1/2 max-h-[600px] flex flex-col items-center justify-center">
+            <div className="sm:w-1/2 max-h-[200px] w-full sm:max-h-[600px] flex flex-col items-center justify-center">
             <img className="h-[90%]" src="/box.jpg" alt="rice box" />
             </div>
             <div className="w-full sm:w-1/2 flex p-3 flex-col items-center justify-center">
@@ -167,26 +171,27 @@ export default function Home() {
 
         <div className="min-h-[600px] z-10 sm:w-[70%] w-[90%] bg-orange-100 rounded shadow flex flex-col mt-10 items-center">
           <p className="h-[10%] text-[50px] mb-1" ref={contactRef}>Contact</p>
+          {!sent && <div className="flex flex-col h-full justify-between">
           <p className="text-center px-4 mt-4">For event enquires please let us know the details using the form below.</p>
           
           <form className="w-[90%] h-[70%] flex flex-wrap justify-evenly items-center" onSubmit={handleSubmit}>
-            <label className="w-full flex items-center justify-center">name:
-              <input type="text" className="w-2/3 ml-3" />
+            <label className="w-full flex items-center justify-center">name :
+              <input type="text" className="w-2/3 ml-3" required/>
             </label>
-            <label className="w-full flex items-center justify-center">email:
-              <input type="text" className="w-2/3 ml-3" />
+            <label className="w-full flex items-center justify-center">email :
+              <input type="text" className="w-2/3 ml-3" required />
             </label>
-            <label className="w-full flex items-center justify-center">subject:
-              <input type="text" className="w-2/3 ml-3" />
+            <label className="w-full flex items-center justify-center">subject :
+              <input type="text" className="w-2/3 ml-3" required />
             </label>
-            <label className="w-full flex justify-center">message:
-              <textarea type="text" className="w-2/3 ml-3" />
+            <label className="w-full flex justify-center">message :
+              <textarea type="text" className="w-2/3 ml-3" required />
             </label>
             <button type="submit" className="hover:text-orange-700 bg-orange-300 rounded w-1/4 shadow "> Send</button>
 
-          </form>
+          </form> 
           <p className=" text-center px-4 mb-4"> If youd like to contact us more directly you can via any of the methods at the bottom of the page.</p>
-
+          </div>|| <p>thanks</p>}
         </div>
 
         <div className="h-[350px] z-10 w-[90%] sm:w-[85%] bg-orange-200 px-2 flex rounded shadow flex-col mt-10 items-center">
