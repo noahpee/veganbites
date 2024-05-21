@@ -131,6 +131,39 @@ export default function Home() {
 
       <div className="flex relative flex-col max-h-[85%] min-h-[85%]  items-center overflow-y-auto w-full">
 
+      <div className="h-[350px] z-10 w-[90%] sm:w-[85%] bg-orange-200 px-2 flex rounded shadow flex-col mt-10 items-center">
+          <p className="h-[20%] text-center w-full flex items-center justify-center text-[50px]" ref={galleryRef}>What We Do</p>
+          <div className="h-[80%] overflow-x-auto no-scrollbar w-full mb-2 flex">
+            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mr-3">
+              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40 " src="/wood.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Wonder of Wood Festival</p>
+            </div>
+            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
+              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/fire.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Kimbolton Fireworks</p>
+
+            </div>
+            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
+              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/first.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Our First Event!</p>
+
+            </div>
+            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
+              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/queens.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Queens May Ball</p>
+
+            </div>
+            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
+              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/hom.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Homerton May Ball</p>
+
+            </div>
+            <div className="min-w-60 relative text-transparent hover:text-white h-full bg-black ml-3">
+              <img className="h-full w-full z-10 object-cover hover:opacity-40 shadow" src="/oriel.png" alt="rice box" />
+              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Oriel College Ball</p>
+            </div>
+          </div>
+      </div>
 
       <div className="h-full sm:min-h-full sm:w-[85%] w-[90%] flex-col sm:flex-row z-10 bg-orange-200 rounded shadow flex mt-1 sm:mt-3">
           <div className="w-full  sm:w-1/2 h-1/2 sm:h-full flex flex-col items-center justify-between py-2">
@@ -163,7 +196,7 @@ export default function Home() {
             <div className="sm:w-1/2 max-h-[200px] w-full sm:max-h-[600px] flex flex-col items-center justify-center">
             <img className="h-[90%]" src="/box.jpg" alt="rice box" />
             </div>
-            <div className="w-full  sm:w-1/2 flex p-3 flex-col items-center justify-center">
+            <div className="w-full  sm:w-1/2 flex p-3 flex-col items-center  justify-center">
               <p className="sm:w-1/2 overflow-y-scroll"> &nbsp; Our menu brings together our favourite flavours from around the world - familiar tastes as well as new ones. We cook our hot dogs American style for that familiar smokey flavour of traditional hot dogs. Proud to say our food is loved by everyone, vegans and non-vegans alike! Dont just take our word for it read what our customers have to say. For flavours close to home try our Classic or Smokey hotdogs or for a flavour further afield we have Korean, Hot Hot or Bombae. For the full menu just get in contact! See our menu allergens</p>
             </div>
           </div>
@@ -194,39 +227,7 @@ export default function Home() {
           </div>|| <div className="flex flex-col h-full justify-center items-center"><p>thanks!</p></div>}
         </div>
 
-        <div className="h-[350px] z-10 w-[90%] sm:w-[85%] bg-orange-200 px-2 flex rounded shadow flex-col mt-10 items-center">
-          <p className="h-[20%] text-center w-full flex items-center justify-center text-[50px]" ref={galleryRef}>Gallery</p>
-          <div className="h-[80%] overflow-x-auto no-scrollbar w-full mb-2 flex">
-            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mr-3">
-              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40 " src="/wood.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Wonder of Wood Festival</p>
-            </div>
-            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
-              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/fire.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Kimbolton Fireworks</p>
 
-            </div>
-            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
-              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/first.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Our First Event!</p>
-
-            </div>
-            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
-              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/queens.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Queens May Ball</p>
-
-            </div>
-            <div className="min-w-60 relative text-transparent hover:text-white bg-black h-full mx-3">
-              <img className="h-full w-full object-cover shadow z-10 hover:opacity-40" src="/hom.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Homerton May Ball</p>
-
-            </div>
-            <div className="min-w-60 relative text-transparent hover:text-white h-full bg-black ml-3">
-              <img className="h-full w-full z-10 object-cover hover:opacity-40 shadow" src="/oriel.png" alt="rice box" />
-              <p className="absolute top-[50%] left-0 z-20 text-center w-full">Oriel College Ball</p>
-            </div>
-          </div>
-      </div>
 
       <div className="max-h-[350px] z-10 min-h-[350px] w-[90%] sm:w-[70%] rounded shadow bg-orange-100 flex flex-col mt-10 items-center">
           <p ref={reviewRef} className="h-[15%] text-center text-[50px] w-full mb-1">Reviews</p>
