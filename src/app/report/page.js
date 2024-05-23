@@ -210,8 +210,8 @@ export default function Report() {
             <label>location<input className="mx-3 p-1 my-2" name="location" type="text" /></label>
 
             <div className="flex sm:flex-row flex-col ">
-            <label>card<input className="mx-3 p-1 my-2" name="card" type="number" required/></label>
-            <label>cash<input className="mx-3 p-1 my-2" name="cash" type="number" required/></label>
+            <label>card<input className="mx-3 p-1 my-2" name="card" step="any" type="number" required/></label>
+            <label>cash<input className="mx-3 p-1 my-2" name="cash" step="any" type="number" required/></label>
             </div>
 
             <label>Staff Hours<input className="mx-3 mt-2 p-1" name="staff" placeholder="0" type="number" /></label>
