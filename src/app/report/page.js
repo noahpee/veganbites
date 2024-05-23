@@ -166,7 +166,7 @@ export default function Report() {
         }
 
 
-        fetch('http://localhost:3001/submit-form', { // Update port number if your server is running on a different port
+        fetch('https://vbserver.onrender.com/submit-form', { // Update port number if your server is running on a different port
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
