@@ -190,6 +190,7 @@ export default function Report() {
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
+        alert("all done")
     })
     .catch((error) => {
         console.error('Error:', error);
